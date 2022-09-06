@@ -83,6 +83,12 @@ body {
     .main__container {
         grid-template-columns: 1fr;
       }
+      .header__form {
+        display: flex;
+        margin: 0 auto;
+        font-size: 26px;
+        text-align: center;
+      }
       .left__section {
         display: grid;
         place-content: center;
