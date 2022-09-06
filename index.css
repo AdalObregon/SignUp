@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+.main__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.left__section {
+  display: grid;
+  place-content: center;
+  width: 50vw;
+  height: 100vh;
+}
+.right__section {
+  display: flex;
+  width: 50vw;
+  background-image: url("./assets/coffe_right.jpg");
+  background-size: contain;
+}
+.header__icon i {
+  font-size: 60px;
+  color: #666be9;
+}
+
+.header__form {
+  display: flex;
+  margin: 0 auto;
+  font-size: 36px;
+  text-align: center;
+}
+.signin__form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+.signin__form label {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.signin__form input {
+  height: 44px;
+  border-radius: 12px;
+  border: 1px solid #000;
+  padding-left: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.signin__form button {
+  height: 44px;
+  background-color: #7066e9;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  border: none;
+  color: white;
+  margin-top: 53px;
+  margin-bottom: 30px;
+}
+.forgot__password {
+  text-align: center;
+  margin-top: 10px;
+  color: #616161;
+  font-weight: 600;
+  cursor: pointer;
+}
+.signup {
+  text-align: center;
+  font-weight: 600;
+  margin-top: 30px;
+}
+.signup span {
+  color: #7066e9;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+    .main__container {
+        grid-template-columns: 1fr;
+      }
+      .left__section {
+        display: grid;
+        place-content: center;
+        width: 100vw;
+        height: 100vh;
+      }
+}
+
